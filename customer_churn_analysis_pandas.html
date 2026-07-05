@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Analysis | Mohit Kasana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #064e3b, #16a34a);
+            color: white;
+            padding: 90px 0 70px;
+        }
+
+        .hero-section h1 {
+            font-size: 44px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            max-width: 900px;
+            line-height: 1.7;
+        }
+
+        .tag-box span {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.16);
+            color: white;
+            padding: 8px 14px;
+            margin: 5px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            margin-bottom: 25px;
+        }
+
+        .content-card h3 {
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .content-card p,
+        .content-card li {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .kpi-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            height: 100%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #16a34a;
+            transition: 0.3s;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kpi-card i {
+            font-size: 36px;
+            color: #16a34a;
+            margin-bottom: 12px;
+        }
+
+        .kpi-card h5 {
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .badge-box span {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 8px 14px;
+            margin: 5px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 25px 0;
+        }
+
+        .btn-custom {
+            border-radius: 30px;
+            padding: 10px 22px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Customer Churn Analysis</h1>
+
+        <p>
+            This project analyzes customer churn data using Python, Pandas and Matplotlib.
+            The goal is to identify churned customers, churn rate, high-risk customer segments,
+            contract impact, payment method impact, tenure behavior and monthly charges patterns.
+        </p>
+
+        <div class="tag-box mt-4">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+            <span>Data Cleaning</span>
+            <span>Churn Analysis</span>
+            <span>Customer Segmentation</span>
+            <span>Business Insights</span>
+        </div>
+
+        <div class="mt-4">
+            <a href="https://mohit8059.github.io/Mohit_Portfolio/" class="btn btn-light btn-custom me-2" target="_blank">
+                View Portfolio
+            </a>
+            <a href="https://github.com/mohit8059/customer_churn_analysis_pandas" class="btn btn-outline-light btn-custom" target="_blank">
+                GitHub Repo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Main Section -->
+<section class="section">
+    <div class="container">
+
+        <!-- Project Image -->
+        <div class="mb-5">
+            <img src="customer_churn_dashboard.png" alt="Customer Churn Analysis" class="project-image">
+        </div>
+
+        <!-- Project Overview -->
+        <div class="content-card">
+            <h3>Project Overview</h3>
+            <p>
+                Customer churn means customers leaving a service or company. This project analyzes customer data
+                to understand which factors are linked with customer churn.
+            </p>
+            <p>
+                The analysis focuses on churn rate, customer tenure, monthly charges, contract type, payment method
+                and high-risk customer segments.
+            </p>
+        </div>
+
+        <!-- Business Problem -->
+        <div class="content-card">
+            <h3>Business Problem</h3>
+            <p>
+                The main business problem is to understand why customers are leaving the company and which customer
+                segments are at higher risk of churn. This helps the company improve retention strategy and reduce
+                revenue loss.
+            </p>
+        </div>
+
+        <!-- KPIs -->
+        <h3 class="fw-bold mb-4">Key KPIs</h3>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-3">
+                <div class="kpi-card">
+                    <i class="bi bi-people-fill"></i>
+                    <h5>Total Customers</h5>
+                    <p>Total number of customers available in the dataset.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="kpi-card">
+                    <i class="bi bi-person-x-fill"></i>
+                    <h5>Churned Customers</h5>
+                    <p>Total customers who left the company.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="kpi-card">
+                    <i class="bi bi-percent"></i>
+                    <h5>Churn Rate</h5>
+                    <p>Percentage of customers who churned.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="kpi-card">
+                    <i class="bi bi-cash-stack"></i>
+                    <h5>Average Monthly Charges</h5>
+                    <p>Average monthly amount charged to customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="content-card">
+            <h3>Tools Used</h3>
+            <div class="badge-box">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Jupyter Notebook</span>
+            </div>
+        </div>
+
+        <!-- Analysis Performed -->
+        <div class="content-card">
+            <h3>Analysis Performed</h3>
+            <ul>
+                <li>Loaded and explored customer churn data using Pandas.</li>
+                <li>Checked rows, columns, data types and missing values.</li>
+                <li>Cleaned column names for easier analysis.</li>
+                <li>Converted total charges column into numeric format.</li>
+                <li>Handled missing and incorrect values.</li>
+                <li>Calculated total customers, churned customers, active customers and churn rate.</li>
+                <li>Analyzed churn by contract type.</li>
+                <li>Analyzed churn by payment method.</li>
+                <li>Analyzed churn by tenure segment and monthly charges.</li>
+                <li>Created visualizations using Matplotlib.</li>
+            </ul>
+        </div>
+
+        <!-- Business Questions -->
+        <div class="content-card">
+            <h3>Business Questions Answered</h3>
+            <ul>
+                <li>How many customers are in the dataset?</li>
+                <li>How many customers churned?</li>
+                <li>What is the overall churn rate?</li>
+                <li>Which contract type has the highest churn?</li>
+                <li>Which payment method is linked with higher churn?</li>
+                <li>Do low-tenure customers churn more?</li>
+                <li>Do higher monthly charges increase churn risk?</li>
+                <li>Which customer segments are high-risk?</li>
+            </ul>
+        </div>
+
+        <!-- Charts -->
+        <div class="content-card">
+            <h3>Visualizations Created</h3>
+            <ul>
+                <li>Churn Status Count</li>
+                <li>Churn Rate by Contract Type</li>
+                <li>Churn by Payment Method</li>
+                <li>Churn by Tenure Segment</li>
+                <li>Monthly Charges vs Churn</li>
+                <li>Customer Segment Risk Analysis</li>
+            </ul>
+        </div>
+
+        <!-- Insights -->
+        <div class="content-card">
+            <h3>Key Insights</h3>
+            <ul>
+                <li>Month-to-month contract customers are more likely to churn.</li>
+                <li>Customers with low tenure show higher churn risk.</li>
+                <li>Electronic check payment method is linked with higher churn.</li>
+                <li>Customers with higher monthly charges may have higher churn probability.</li>
+                <li>Contract type, tenure and payment method are important churn indicators.</li>
+            </ul>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="content-card">
+            <h3>Business Recommendations</h3>
+            <ul>
+                <li>Focus retention campaigns on month-to-month contract customers.</li>
+                <li>Give onboarding support and offers to new customers with low tenure.</li>
+                <li>Review payment experience for electronic check users.</li>
+                <li>Offer discounts or better value plans to high monthly charge customers.</li>
+                <li>Create customer risk segments to identify churn-prone customers early.</li>
+            </ul>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="content-card">
+            <h3>Project Conclusion</h3>
+            <p>
+                This project demonstrates practical Data Analyst skills including data cleaning, KPI creation,
+                customer segmentation, churn analysis, grouping, aggregation, visualization and business
+                recommendation building using Python, Pandas and Matplotlib.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p class="mb-0">© 2026 Mohit Kasana | Customer Churn Analysis</p>
+    </div>
+</footer>
+
+</body>
+</html>
