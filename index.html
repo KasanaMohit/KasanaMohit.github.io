@@ -497,7 +497,7 @@
             }
         </style>
 
-        <!-- TOP 4 PROJECTS (ALWAYS VISIBLE) -->
+        <!-- SINGLE ROW FOR ALL PROJECTS -->
         <div class="row g-4">
             
             <!-- Project 1: Sales Dashboard -->
@@ -592,206 +592,204 @@
                 </div>
             </div>
 
-        </div> <!-- /.row (Top 4) -->
+            <!-- ============================================== -->
+            <!-- HIDDEN PROJECTS (Notice the 'collapse multi-collapse' class) -->
+            <!-- ============================================== -->
 
-        <!-- HIDDEN PROJECTS (COLLAPSE) -->
-        <div class="collapse" id="moreProjectsSection">
-            <div class="row g-4 mt-1">
-                
-                <!-- Project 5: Financial Dashboard -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/financial_dashboard.png" alt="Financial Dashboard">
-                        </div>
-                        <h5 class="fw-bold text-dark">Financial Analysis Dashboard</h5>
-                        <p class="text-muted small project-desc">
-                            Budget vs actual metrics, custom revenues trackers and operational metrics parameters.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Advanced SQL</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="financial_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/FInancial_Dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 5: Financial Dashboard -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/financial_dashboard.png" alt="Financial Dashboard">
+                    </div>
+                    <h5 class="fw-bold text-dark">Financial Analysis Dashboard</h5>
+                    <p class="text-muted small project-desc">
+                        Budget vs actual metrics, custom revenues trackers and operational metrics parameters.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Advanced SQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="financial_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/FInancial_Dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 6: Customer Churn Dashboard -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/customer_churn_analysis.png" alt="Customer Churn Dashboard">
-                        </div>
-                        <h5 class="fw-bold text-dark">Customer Churn Analysis Dashboard</h5>
-                        <p class="text-muted small project-desc">
-                            Power BI dashboard analyzing customer churn behavior, churn rate, contract type, payment method, tenure and high-risk customer segments.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power Query</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Excel</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="customer_churn_analysis.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/customer_churn_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 6: Customer Churn Dashboard -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/customer_churn_analysis.png" alt="Customer Churn Dashboard">
+                    </div>
+                    <h5 class="fw-bold text-dark">Customer Churn Analysis Dashboard</h5>
+                    <p class="text-muted small project-desc">
+                        Power BI dashboard analyzing customer churn behavior, churn rate, contract type, payment method, tenure and high-risk customer segments.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power Query</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Excel</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="customer_churn_analysis.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/customer_churn_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 7: NIFTY Dashboard -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/nifty_dashboard.png" alt="NIFTY Dashboard">
-                        </div>
-                        <h5 class="fw-bold text-dark">NIFTY Stock Market Dashboard</h5>
-                        <p class="text-muted small project-desc">
-                            An interactive Power BI dashboard designed to analyze stock price trends, trading volume, and returns.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power Query</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="nifty_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/nifty_dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 7: NIFTY Dashboard -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/nifty_dashboard.png" alt="NIFTY Dashboard">
+                    </div>
+                    <h5 class="fw-bold text-dark">NIFTY Stock Market Dashboard</h5>
+                    <p class="text-muted small project-desc">
+                        An interactive Power BI dashboard designed to analyze stock price trends, trading volume, and returns.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power Query</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="nifty_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/nifty_dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 8: IPL Analytics Dashboard -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/ipl_analytics_dashboard.png" alt="IPL Dashboard">
-                        </div>
-                        <h5 class="fw-bold text-dark">IPL Analytics Dashboard</h5>
-                        <p class="text-muted small project-desc">
-                            Interactive Power BI dashboard designed to analyze IPL team performance, player statistics, and match trends.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Excel</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="ipl_analytics_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/ipl_analytics_dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 8: IPL Analytics Dashboard -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/ipl_analytics_dashboard.png" alt="IPL Dashboard">
+                    </div>
+                    <h5 class="fw-bold text-dark">IPL Analytics Dashboard</h5>
+                    <p class="text-muted small project-desc">
+                        Interactive Power BI dashboard designed to analyze IPL team performance, player statistics, and match trends.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Power BI</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">DAX</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Excel</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="ipl_analytics_dashboard.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/ipl_analytics_dashboard" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 9: Student Management System -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/student_management_system.png" alt="Student Management System">
-                        </div>
-                        <h5 class="fw-bold text-dark">Student Management System</h5>
-                        <p class="text-muted small project-desc">
-                            A Python-based desktop application designed to manage student records, attendance, fees, courses, reports and role-based access.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Python</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Tkinter</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">MySQL</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">OOP</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="student_management_system.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/student_management_system" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 9: Student Management System -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/student_management_system.png" alt="Student Management System">
+                    </div>
+                    <h5 class="fw-bold text-dark">Student Management System</h5>
+                    <p class="text-muted small project-desc">
+                        A Python-based desktop application designed to manage student records, attendance, fees, courses, reports and role-based access.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Python</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Tkinter</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">MySQL</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">OOP</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="student_management_system.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/student_management_system" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 10: Restaurant Food Delivery Analysis -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/food_delivery_trends_and_insights_dashboard.png" alt="Restaurant Food Delivery Analysis">
-                        </div>
-                        <h5 class="fw-bold text-dark">Restaurant Food Delivery Analysis</h5>
-                        <p class="text-muted small project-desc">
-                            Analyzed food delivery performance to measure average delivery time, delayed orders, traffic impact, weather impact and vehicle type performance.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Python</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">NumPy</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="restaurant_food_delivery_analysis.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
-                            <a href="https://github.com/mohit8059/restaurant_food_delivery_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 10: Restaurant Food Delivery Analysis -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/food_delivery_trends_and_insights_dashboard.png" alt="Restaurant Food Delivery Analysis">
+                    </div>
+                    <h5 class="fw-bold text-dark">Restaurant Food Delivery Analysis</h5>
+                    <p class="text-muted small project-desc">
+                        Analyzed food delivery performance to measure average delivery time, delayed orders, traffic impact, weather impact and vehicle type performance.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Python</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">NumPy</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="restaurant_food_delivery_analysis.html?v=2" class="btn btn-primary btn-sm me-2">View Project</a>
+                        <a href="https://github.com/mohit8059/restaurant_food_delivery_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 11: Retail Sales Performance Analysis using Pandas -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/retail_sales_dashboard.png" alt="Retail Sales Performance Analysis">
-                        </div>
-                        <h5 class="fw-bold text-dark">Retail Sales Performance Analysis</h5>
-                        <p class="text-muted small project-desc">
-                            Analyzed retail sales data using Pandas to calculate revenue KPIs, product category performance, customer behavior, monthly trends and business insights.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Python</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Jupyter</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://mohit8059.github.io/retail_sales_analysis/" class="btn btn-primary btn-sm me-2" target="_blank">View Project</a>
-                            <a href="https://github.com/mohit8059/retail_sales_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 11: Retail Sales Performance Analysis -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/retail_sales_dashboard.png" alt="Retail Sales Performance Analysis">
+                    </div>
+                    <h5 class="fw-bold text-dark">Retail Sales Performance Analysis</h5>
+                    <p class="text-muted small project-desc">
+                        Analyzed retail sales data using Pandas to calculate revenue KPIs, product category performance, customer behavior, monthly trends and business insights.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Python</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Jupyter</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://mohit8059.github.io/retail_sales_analysis/" class="btn btn-primary btn-sm me-2" target="_blank">View Project</a>
+                        <a href="https://github.com/mohit8059/retail_sales_analysis" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 12: Customer Churn Analysis using Pandas -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-3 bg-white shadow-sm rounded h-100">
-                        <div class="project-thumb mb-3">
-                            <img src="images/customer_churn_pandas_dashboard.png" alt="Customer Churn Analysis using Pandas">
-                        </div>
-                        <h5 class="fw-bold text-dark">Customer Churn Analysis using Pandas</h5>
-                        <p class="text-muted small project-desc">
-                            Analyzed customer churn data using Pandas to identify churn rate, high-risk customers, contract impact, payment method impact and retention insights.
-                        </p>
-                        <div class="project-tools mb-3">
-                            <strong class="small text-dark d-block mb-1">Tools Used:</strong>
-                            <span class="badge bg-primary-subtle text-primary m-1">Python</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
-                            <span class="badge bg-primary-subtle text-primary m-1">Jupyter</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://mohit8059.github.io/customer_churn_analysis_pandas/" class="btn btn-primary btn-sm me-2" target="_blank">View Project</a>
-                            <a href="https://github.com/mohit8059/customer_churn_analysis_pandas" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
-                        </div>
+            <!-- Project 12: Customer Churn Analysis using Pandas -->
+            <div class="col-md-6 col-lg-4 collapse multi-collapse">
+                <div class="project-card p-3 bg-white shadow-sm rounded h-100">
+                    <div class="project-thumb mb-3">
+                        <img src="images/customer_churn_pandas_dashboard.png" alt="Customer Churn Analysis using Pandas">
+                    </div>
+                    <h5 class="fw-bold text-dark">Customer Churn Analysis using Pandas</h5>
+                    <p class="text-muted small project-desc">
+                        Analyzed customer churn data using Pandas to identify churn rate, high-risk customers, contract impact, payment method impact and retention insights.
+                    </p>
+                    <div class="project-tools mb-3">
+                        <strong class="small text-dark d-block mb-1">Tools Used:</strong>
+                        <span class="badge bg-primary-subtle text-primary m-1">Python</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Pandas</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Matplotlib</span>
+                        <span class="badge bg-primary-subtle text-primary m-1">Jupyter</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://mohit8059.github.io/customer_churn_analysis_pandas/" class="btn btn-primary btn-sm me-2" target="_blank">View Project</a>
+                        <a href="https://github.com/mohit8059/customer_churn_analysis_pandas" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                     </div>
                 </div>
+            </div>
 
-            </div> <!-- /.row (Hidden) -->
-        </div> <!-- /.collapse -->
+        </div> <!-- /.row -->
 
         <!-- VIEW MORE BUTTON -->
         <div class="text-center mt-5">
-            <button class="btn btn-outline-primary btn-view-more" type="button" data-bs-toggle="collapse" data-bs-target="#moreProjectsSection" aria-expanded="false" aria-controls="moreProjectsSection" id="toggleProjectsBtn">
+            <!-- Target changed to .multi-collapse class -->
+            <button class="btn btn-outline-primary btn-view-more" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" id="toggleProjectsBtn">
                 View More Projects <i class="bi bi-chevron-down ms-1"></i>
             </button>
         </div>
@@ -801,16 +799,18 @@
     <!-- Script to toggle button text -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var myCollapsible = document.getElementById('moreProjectsSection');
             var toggleBtn = document.getElementById('toggleProjectsBtn');
+            var firstHiddenProject = document.querySelector('.multi-collapse');
 
-            myCollapsible.addEventListener('show.bs.collapse', function () {
-                toggleBtn.innerHTML = 'View Less Projects <i class="bi bi-chevron-up ms-1"></i>';
-            });
+            if(firstHiddenProject) {
+                firstHiddenProject.addEventListener('show.bs.collapse', function () {
+                    toggleBtn.innerHTML = 'View Less Projects <i class="bi bi-chevron-up ms-1"></i>';
+                });
 
-            myCollapsible.addEventListener('hide.bs.collapse', function () {
-                toggleBtn.innerHTML = 'View More Projects <i class="bi bi-chevron-down ms-1"></i>';
-            });
+                firstHiddenProject.addEventListener('hide.bs.collapse', function () {
+                    toggleBtn.innerHTML = 'View More Projects <i class="bi bi-chevron-down ms-1"></i>';
+                });
+            }
         });
     </script>
 </section>
