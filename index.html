@@ -845,23 +845,48 @@
             </div>
 
             <div class="col-md-7">
-                <form action="https://formsubmit.co/mohit805959@gmail.com" method="POST" class="contact-form bg-secondary bg-opacity-10 p-4 rounded shadow-sm">
-                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-                    <div class="mb-3">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                </form>
-            </div>
+    <form id="contact-form" class="contact-form bg-secondary bg-opacity-10 p-4 rounded shadow-sm">
+        <div class="mb-3">
+            <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
         </div>
-    </div>
-</section>
+        <div class="mb-3">
+            <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+            <textarea name="Message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" id="submit-btn" class="btn btn-primary w-100">Send Message</button>
+    </form>
+</div>
+      <script>
+  // Yahan Google Apps Script se mila hua Web App URL daalein
+  const scriptURL = 'YOUR_WEB_APP_URL_HERE';
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Sending...';
+
+    fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form)
+    })
+    .then(response => {
+      alert("Message successfully send ho gaya!");
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Send Message';
+      form.reset();
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      alert("Kuch gadbad hui, kripya dobara koshish karein.");
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Send Message';
+    });
+  });
+</script>      
 <!-- Footer Section -->
 <footer class="bg-dark text-white pt-5 pb-4 border-top border-secondary border-opacity-20">
     <div class="container text-center text-md-start">
